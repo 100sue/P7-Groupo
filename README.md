@@ -88,9 +88,8 @@ Veuillez cloner ce dépôt : il vous fournira les deux dossiers nécessaires : b
 
 - Accès à la base de données :
 
-- Vous devez avoir MySQL installé sur votre ordinateur. Cette application utilise le plugin dotenv pour masquer les données de connexion. 
-- Dans le dossier backend, vous trouverez un fichier ".env__", qui vous donnera accès à la base de données MySQL de groupomania. 
-- Veuillez d’abord créer dans MySQL une base de données, un utilisateur avec son mot de passe qui aura accès à cette base de données.
+- Vous devez avoir Mongo DB installé sur votre ordinateur. Cette application utilise le plugin dotenv pour masquer les données de connexion. 
+- Dans le dossier backend, vous trouverez un fichier ".env__", qui vous donnera accès à la base de données Mongo Db de groupomania. 
 - Puis remplissez avec les valeurs correctes pour les variables "DB_DATABASE", "DB_USER" et "DB_PASS", dans le ficher ".env__" et changez son nom en ".env".
 
    ### Executer l'application : ###
@@ -138,7 +137,7 @@ The presentation of the functionalities must be simple :
 - Access to a forum where employees publish texts must be present.
 - Users must be able to easily locate the latest contributions of employees.
 - The Groupomania communication manager must be able to moderate interactions between employees and the Groupomania communication manager must be able to display the latest employee contributions.
-- The database must be manipulated with the SQL language.
+- The database must be manipulated with Mongo Db.
 - The connection data must be secure.
 - The project must be inclusive by respecting the WACG standards.
 
