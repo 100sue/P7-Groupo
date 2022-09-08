@@ -2,13 +2,13 @@
   <div class="signup">
       <div class="signup-insert">
           <p class="signup-insert-msg">
-              Bienvenue
+              Bienvenue,
           </p>
           <p class="signup-insert-msg p-greythin">
-              sur votre réseau social
+            Sur Groupomania Média
           </p>
           <p class="signup-insert-msg p-red">
-              Groupomania-intranet
+            Votre réseau social
           </p>
           <img src="../assets/img-accueil.svg" alt="Groupomania-image-accueil" class="signup-insert-img"/>
       </div>
@@ -95,36 +95,6 @@ export default {
               .catch(error => alert("Erreur : " + error));
       }
   }
-  /* methods: {
-      async createUser() {
-          try {
-          const emailSignup = this.emailSignup;
-          const passwordSignup = this.passwordSignup;
-          await axios.post('http://localhost:3000/api/auth/signup', { email: emailSignup, password: passwordSignup })
-          .then(function (response) {
-              localStorage.setItem("userId", response.data.userId);
-              router.push('/feed');
-              console.log('titi');
-          })
-          .catch(error => alert("Erreur : " + error));
-          } catch (error) {
-              console.log(error)
-          }
-      }
-  }
-  mounted: 
-      function() {
-          const emailSignup = this.emailSignup;
-          const passwordSignup = this.passwordSignup;
-          axios
-          .post('http://localhost:3000/api/auth/signup', { email: emailSignup, password: passwordSignup })
-          .then(function (response) {
-              localStorage.setItem("userId", response.data.userId);
-              router.push('/feed');
-              console.log('titi');
-          })
-          .catch(error => alert("Erreur : " + error));
-      }*/
   
 }
 </script>
@@ -154,7 +124,7 @@ export default {
   font-weight:lighter;
 }
 .p-red{
-  color: #fbc8c8
+  color: #FD2D01
 }
 /* IMAGE */ 
 .signup-insert-img{
@@ -179,6 +149,7 @@ export default {
   padding: 40px;
   border-radius: 20px;
   margin-bottom: 70px;
+  background-color: #432ff7;
 }
 .signup-container-form{
   display: flex;

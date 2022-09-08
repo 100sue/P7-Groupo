@@ -52,7 +52,7 @@ export default {
     border: 2px solid #FD2D01;
 }
 .header-nav-btn:hover{
-    color: white;
+    color: #432ff7;
     background-color: #FD2D01;
     transition: 0.2s linear;
 }

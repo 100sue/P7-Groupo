@@ -1,9 +1,9 @@
 <template>
     <div class="login">
         <div class="login-insert">
-            <p class="login-insert-msg">Bienvenue</p>
-            <p class="login-insert-msg p-greythin">Sur votre réseau social</p>
-            <p class="login-insert-msg p-red">Groupomania intranet</p>
+            <p class="login-insert-msg">Bienvenue,</p>
+            <p class="login-insert-msg p-greythin">Sur Groupomania Média</p>
+            <p class="login-insert-msg p-blue">Votre réseau social</p>
             <img src="../assets/img-accueil.svg" alt="Groupomania-image-accueil" class="login-insert-img"/>
         </div> 
         <div class="login-container">
@@ -89,8 +89,8 @@ export default {
 .p-greythin{
     font-weight:lighter;
 }
-.p-red{
-    color: #fbc8c8
+.p-blue{
+    color: #432ff7
 }
 /* IMAGE */ 
 .login-insert-img{
@@ -116,6 +116,7 @@ export default {
     border-radius: 20px;
     height: 230px;
     margin-bottom: 70px;
+    background-color: #432ff7;
 }
 .login-container-form{
     display: flex;
