@@ -4,7 +4,7 @@
 
 ## Projet 7 du parcours de Developpeur Web chez OpenClassrooms.  ##
 
- Réseau Social Groupomania : projet frontend et backend.
+ Réseau Social Groupomania : Projet full-stack (frontend et backend).
  
  Projet M.E.V.N (Mongo, Express, Vue, Node)
  
