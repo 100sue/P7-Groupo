@@ -6,7 +6,7 @@
 
  Réseau Social Groupomania : projet frontend et backend.
  
- Projet M.E.V.N (Mango, Express, Vue, Node)
+ Projet M.E.V.N (Mongo, Express, Vue, Node)
  
  <p align="center">
 <img src= "https://user-images.githubusercontent.com/90606431/186601599-2fae53bf-75b9-40f6-97f8-2b231a8b0202.jpg"/>
