@@ -18,13 +18,13 @@
 - Développer les parties front-end et back-end de l'application.
 
 
-Ce projet utilisera NodeJs, Express et Mango DB pour le backend, et Vue, bootstrap, Vite pour le frontend. 
+Ce projet utilisera NodeJs, Express et Mango DB pour le backend, et Vue, Vite pour le frontend. 
 <br>
 
  ## Technologies utilisées : ##
  
-- HTML5, CSS3, JavaScript, Node.js, Vue.js, Express, Mango Db, CRUD Operations, OWASP & RGPD Standards.
-- Dependances : Bcrypt, Dotenv, Express, Express-rate-limit, Helmet, Jsonwebtoken, Multer, Password-validator.
+- HTML5, CSS3, JavaScript, Node.js, Vue.js, Express, Mango Db, Vite, CRUD Operations, OWASP & RGPD Standards.
+- Dependances : Axios, Bcrypt, Cors,  Dotenv, Express, Fs, Jsonwebtoken, Mongoose, Mongoose-unique-validator,  Multer, Nodemon, Path, Vue-router .
 
  <br>
  <br>
@@ -97,14 +97,14 @@ Veuillez cloner ce dépôt : il vous fournira les deux dossiers nécessaires : b
 
 - Vous aurez besoin de deux fenêtres de terminal : une pour le frontend, une pour le backend. 
 - Sur le terminal backend : exécutez "npm install, puis "npm run dev". 
-- Le serveur doit fonctionner sur localhost avec le port par défaut 3300. 
+- Le serveur doit fonctionner sur localhost avec le port par défaut 3000. 
 - Puis, sur le terminal frontend : lancez "npm install pour installer tous les plugins nécessaires, puis "npm run dev". 
-- Le frontend de l'application est visible sur http:// localhost: 3000/.
+- Le frontend de l'application est visible sur http:// localhost: 5173/.
     
     
     ### L'application :  ###
    
-Lancez l'application : ouvrez l'application en cliquant sur http://localhost:3000/
+Lancez l'application : ouvrez l'application en cliquant sur http://localhost:5173/
 
 Pour l'Utilisation de l'application : 
 
