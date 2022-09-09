@@ -2,9 +2,8 @@
     <div class="login">
         <div class="login-insert">
             <p class="login-insert-msg">Bienvenue,</p>
-            <p class="login-insert-msg p-greythin">Sur Groupomania Média</p>
-            <p class="login-insert-msg p-blue">Votre réseau social</p>
-            <img src="../assets/img-accueil.svg" alt="Groupomania-image-accueil" class="login-insert-img"/>
+            <p class="login-insert-msg p-red">sur votre réseau social</p>
+            <img src="../assets/banner-home.png" alt="Groupomania-image-accueil" class="login-insert-img"/>
         </div> 
         <div class="login-container">
             <form class="login-container-form" @submit="logUser">
@@ -82,15 +81,13 @@ export default {
     margin:0;
     font-weight: bold;
     font-size: 3.5rem;
+    color: black;
 }
 .login-insert-msg:last-of-type{
     margin-bottom: 60px;
 }
-.p-greythin{
-    font-weight:lighter;
-}
-.p-blue{
-    color: #432ff7
+.p-red{
+    color: #FD2D01;
 }
 /* IMAGE */ 
 .login-insert-img{
@@ -116,7 +113,7 @@ export default {
     border-radius: 20px;
     height: 230px;
     margin-bottom: 70px;
-    background-color: #432ff7;
+    background-color: #2C3B97;
 }
 .login-container-form{
     display: flex;

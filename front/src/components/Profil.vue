@@ -314,7 +314,7 @@ input[type='file']{
       margin: 0 50px;
   }
 }
-/* TABLET */
+/* Tablette */
 @media screen and (max-width: 768px) {
   .about-modify-btn{
       top: 25px;
@@ -333,7 +333,7 @@ input[type='file']{
       margin-left: 10px;
   }
 }
-/* MOBILE */
+/* Mobile */
 @media screen and (max-width: 610px) {
   .about{
       flex-direction: column;

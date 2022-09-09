@@ -1,6 +1,7 @@
 {
   "name": "front",
   "version": "0.0.0",
+  "description": "Front-end de groupomania",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

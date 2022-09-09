@@ -26,14 +26,20 @@
         max-width: 1024px;
         margin: auto;
         padding-top: 20px;
+        background-image: url("../assets/test2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 68vh;
+        padding: 3%; 
     }
-    /* TABLET */
+    
+    /* Tablette */
     @media screen and (max-width: 1100px) {
         #header{
           margin: 0 50px;
         }
     }
-    /* MOBILE */
+    /* Mobile */
     @media screen and (max-width: 425px) {
       #header{
         flex-direction: column;

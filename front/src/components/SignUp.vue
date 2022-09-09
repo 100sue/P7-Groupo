@@ -4,13 +4,10 @@
           <p class="signup-insert-msg">
               Bienvenue,
           </p>
-          <p class="signup-insert-msg p-greythin">
-            Sur Groupomania Média
-          </p>
           <p class="signup-insert-msg p-red">
-            Votre réseau social
+            sur votre réseau social
           </p>
-          <img src="../assets/img-accueil.svg" alt="Groupomania-image-accueil" class="signup-insert-img"/>
+          <img src="../assets/Banner-home.png" alt="Groupomania-image-accueil" class="signup-insert-img"/>
       </div>
       <div class="signup-container">
           <form class="signup-container-form" @submit="createUser">
@@ -27,7 +24,7 @@
               </div>
               <div>
                   <span id="connectErrorMsg" v-show="errorJob" class="signup-container__errormsg">Champ invalide, veuillez vérifier votre job dans l'entreprise.</span>
-                  <input type="text" v-model="jobSignup" class="signup-container__input" placeholder="Job chez Groupomania" aria-label="Job">
+                  <input type="text" v-model="jobSignup" class="signup-container__input" placeholder="Poste chez Groupomania" aria-label="Job">
               </div>
               <div>
                   <span id="connectErrorMsg" v-show="errorEmail" class="signup-container__errormsg">Champ invalide, veuillez vérifier votre email.</span>
@@ -116,22 +113,21 @@ export default {
   margin:0;
   font-weight: bold;
   font-size: 3.5rem;
+  color: black;
 }
 .signup-insert-msg:last-of-type{
   margin-bottom: 60px;
 }
-.p-greythin{
-  font-weight:lighter;
-}
+
 .p-red{
   color: #FD2D01
 }
-/* IMAGE */ 
+/* Image */ 
 .signup-insert-img{
   animation: SlideDown 1.5s ease-in-out;
   animation-iteration-count: infinite;
 }
-/* ANIMATION IMAGE */
+/* Animation Image */
 @keyframes SlideDown {
   0% {
       transform: translateY(15px);
@@ -143,13 +139,13 @@ export default {
       transform: translateY(15px);
   }
 }
-/* FORM */
+/* Forme */
 .signup-container {
   box-shadow: 1px 1px 10px #FD2D01;
   padding: 40px;
   border-radius: 20px;
   margin-bottom: 70px;
-  background-color: #432ff7;
+  background-color: #2C3B97;
 }
 .signup-container-form{
   display: flex;
@@ -191,34 +187,34 @@ export default {
       margin: 60px 50px;
   }
 }
-/* TABLET */
+ /* Tablette */
 @media screen and (max-width: 768px) {
   .signup{
       flex-direction: column;
       margin-top: 10px;
   }
-  /* WELCOME TEXT */
+  /* Texte d'Acceuil */
   .signup-insert{
       width: 90%;
       text-align: center;
   }
-  /* IMAGE */ 
+  /* Image */ 
   .signup-insert-img{
       width: 50%;
   }
-  /* FORM */ 
+  /* Forme */ 
   .signup-container {
       margin-top: 70px;
       width: auto;
   }
 }
-/* MOBILE */
+/* Mobile */
 @media screen and (max-width: 425px) {
   .signup{
       flex-direction: column;
       margin-top: 10px;
   }
-  /* WELCOME TEXT */
+  /* Texte d'Acceuil */
   .signup-insert{
       margin-top: 30px;
       width: 100%;
@@ -227,11 +223,11 @@ export default {
   .signup-insert-msg{
       font-size: 2.3rem;
   }
-  /* IMAGE */ 
+  /* Image */ 
   .signup-insert-img{
       width: 100%;
   }
-  /* FORM */ 
+  /* Forme */ 
   .signup-container {
       width: auto;
       margin: 80px 30px;

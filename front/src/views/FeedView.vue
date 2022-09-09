@@ -36,13 +36,13 @@
         height:1.5px;
         width: 100%;
     }
-    /* TABLET */
+    /* Tablette */
     @media screen and (max-width: 1100px) {
         #header{
             margin: 0 50px;
         }
     }
-    /* MOBILE */
+    /* Mobile */
     @media screen and (max-width: 615px) {
         #header{
             flex-direction: column;
