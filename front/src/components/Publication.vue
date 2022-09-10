@@ -133,7 +133,7 @@ export default {
           this.getImageUrl = imageToModify;
       },
       delPublication(idPostDel){
-          axios.delete("http://localhost:3000/api/auth/posts/" + idPostDel, { headers:{ "Authorization": "Bearer " + localStorage.getItem("token")}})
+          axios.delete("http://localhost:27107/api/auth/posts/" + idPostDel, { headers:{ "Authorization": "Bearer " + localStorage.getItem("token")}})
               .then(() => {
                   router.go();
                   })
@@ -154,7 +154,7 @@ export default {
           if (this.inputFile.name != null){ 
               formData.append('imageUrl', this.inputFile.data, this.inputFile.name);
           }
-          axios.put("http://localhost:3000/api/auth/posts/" + this.getIdPost, formData, { headers:{ "Authorization": "Bearer " + localStorage.getItem("token")}})
+          axios.put("http://localhost:27107/api/auth/posts/" + this.getIdPost, formData, { headers:{ "Authorization": "Bearer " + localStorage.getItem("token")}})
               .then((response) => {
                   this.getImageUrl = response.data.imageUrl;
                   this.content = this.modifyPostContent;
@@ -164,7 +164,7 @@ export default {
               .catch(error => alert("Erreur : " + error));
       },
       addLike(idPost){
-          axios.put("http://localhost:3000/api/auth/posts/likes/" + idPost, {}, { headers:{ "Authorization": "Bearer " + localStorage.getItem("token")}})
+          axios.put("http://localhost:27107/api/auth/posts/likes/" + idPost, {}, { headers:{ "Authorization": "Bearer " + localStorage.getItem("token")}})
               .then((response) => {
                   router.go();
                   })
@@ -177,7 +177,7 @@ export default {
           let form = e.target
           let textarea = form.querySelector('.post-bottom__input');
           if (textarea.value != "") {
-              axios.put("http://localhost:3000/api/auth/posts/comments/" + idPost, {"comment" : textarea.value}, { headers:{ "Authorization": "Bearer " + localStorage.getItem("token")}})
+              axios.put("http://localhost:27107/api/auth/posts/comments/" + idPost, {"comment" : textarea.value}, { headers:{ "Authorization": "Bearer " + localStorage.getItem("token")}})
                   .then((response) => {
                       router.go();
                       })
@@ -188,7 +188,7 @@ export default {
           }
       },
       delComment(idPostCommentDel, idComment){
-          axios.delete("http://localhost:3000/api/auth/posts/" + idPostCommentDel + "/comments/" + idComment, { headers:{ "Authorization": "Bearer " + localStorage.getItem("token")}})
+          axios.delete("http://localhost:27107/api/auth/posts/" + idPostCommentDel + "/comments/" + idComment, { headers:{ "Authorization": "Bearer " + localStorage.getItem("token")}})
               .then(() => {
                   router.go();
                   })
@@ -196,7 +196,7 @@ export default {
       },
   },
   mounted() {
-      axios.get("http://localhost:3000/api/auth/posts", { headers:{ "Authorization": "Bearer " + localStorage.getItem("token")}})
+      axios.get("http://localhost:27107/api/auth/posts", { headers:{ "Authorization": "Bearer " + localStorage.getItem("token")}})
           .then((response) => {
               var datas = response.data.reverse();
               var currentPath = this.$route.path;
@@ -213,7 +213,7 @@ export default {
               }
           })
           .catch(error => alert("Erreur : " + error));
-      axios.get("http://localhost:3000/api/auth/user/" + localStorage.getItem("userId"), { headers:{ "Authorization": "Bearer " + localStorage.getItem("token")}})
+      axios.get("http://localhost:27107/api/auth/user/" + localStorage.getItem("userId"), { headers:{ "Authorization": "Bearer " + localStorage.getItem("token")}})
           .then((response) => {
               this.userRole = response.data.role;
               this.userId = localStorage.getItem("userId");
@@ -237,7 +237,7 @@ export default {
   align-items: center;    
 }
 .modify-post-window{
-  background-color: white;
+  background-color: #2C3B97;
   border-radius: 20px;
 }
 .modify-post-top{
@@ -381,9 +381,9 @@ input[type='file']{
 }
 .post-name{
   text-decoration: none;
-  color:#4E5166;
+  color:#FD2D01;
   margin:0;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: bold;
 }
 .post-date{
@@ -429,6 +429,7 @@ input[type='file']{
 }
 .post-middle-like__icon{
   font-size: 1.5rem;
+  color: #2C3B97;
 }
 .post-middle-like__iconRED{
   font-size: 1.5rem;
@@ -464,7 +465,7 @@ input[type='file']{
   border: none;
 }
 .post-bottom__btn:hover{
-  background-color: #4E5166;
+  background-color: #2C3B97;
   color: white;
   transition: 0.2s linear;
 }

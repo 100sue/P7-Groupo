@@ -106,7 +106,7 @@ export default {
           if (this.errorFirstNameUpdate || this.errorLastNameUpdate || this.errorJobUpdate) {
               return;
           }
-          axios.put("http://localhost:3000/api/auth/user/" + localStorage.getItem("userId"), formData, { headers:{ "Authorization": "Bearer " + localStorage.getItem("token")}})
+          axios.put("http://localhost:27107/api/auth/user/" + localStorage.getItem("userId"), formData, { headers:{ "Authorization": "Bearer " + localStorage.getItem("token")}})
               .then((response) => {
                   this.avatar = response.data.avatar;
                   this.firstname = this.firstNameUpdate;
@@ -119,7 +119,7 @@ export default {
       }
   },
   mounted() {
-      axios.get("http://localhost:3000/api/auth/user/" + localStorage.getItem("userId"), { headers:{ "Authorization": "Bearer " + localStorage.getItem("token")}})
+      axios.get("http://localhost:27107/api/auth/user/" + localStorage.getItem("userId"), { headers:{ "Authorization": "Bearer " + localStorage.getItem("token")}})
           .then((response) => {
               this.firstname = response.data.firstname;
               this.lastname = response.data.lastname;
