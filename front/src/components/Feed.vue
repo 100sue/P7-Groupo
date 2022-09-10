@@ -185,7 +185,7 @@ input[type='file']{
     z-index: -5;
 }
 .create-post-middle-btn:hover{
-    background-color: #4E5166;
+    background-color: #FD2D01;
     color: white;
     transition: 0.2s linear;
 }.create-post-middle-btn__title{
@@ -230,10 +230,10 @@ input[type='file']{
     max-width: 570px;
     margin: auto;
     border-radius: 30px;
-    border: 0.5px solid #4E5166;
+    background-color: #FD2D01;
+    border: 0.5px solid #2C3B97;
     padding:25px;
     box-shadow: 2px 3px 8px #d0d1d6;
-    color: #2C3B97;
 }
 .main-create-post-photoprofil{
     border-radius: 100px;
@@ -256,7 +256,7 @@ input[type='file']{
     width: 85%;
 }
 .main-create-post-btn:hover{
-    background-color: #4E5166;
+    background-color: #2C3B97;
     color: white;
     transition: 0.2s linear;
 }

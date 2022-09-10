@@ -2,7 +2,7 @@
   <div class="modify-post" v-show="modification">
       <div class="modify-post-window">
           <div class="modify-post-top">
-              <p class="modify-post-top__title">Modifier votre publication</p>
+              <p class="modify-post-top__title">Modifier votre message</p>
               <fontAwesome icon="close" @click="modifyPublication" class="modify-post-top__close"/>
           </div>
           <span class="modify-post-line"></span>
@@ -30,7 +30,7 @@
           </form>
       </div>
   </div>
-  <div v-if="messages.length == 0" class="nothing">Il n'y a pas de publications pour l'instant !</div>
+  <div v-if="messages.length == 0" class="nothing">Il n'y a pas de nouvelles publications pour l'instant !</div>
   <div v-else v-for="message in messages" :key="message.id" class="post">
       <div class="post-top">
           <div class="post-photoprofil">
@@ -227,7 +227,7 @@ export default {
 /* FENETRE MODIFIER POST */
 .modify-post{
   inset: 0px;
-  background-color: #4e516660;
+  background-color: #172bc760;
   position: fixed;
   height: 100%;
   width: 100%;

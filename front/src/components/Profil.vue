@@ -46,7 +46,7 @@
       </div>
       
   </div>
-  <p class="about-yourpublications">Vos publications sur l'intranet</p>
+  <p class="about-yourpublications">Vos derniers messages</p>
 </template>
 
 <script>
@@ -148,7 +148,7 @@ export default {
   align-items: center;    
 }
 .modify-window{
-  background-color: white;
+  background-color: #2C3B97;
   border-radius: 20px;
 }
 .modify-top{
@@ -217,7 +217,7 @@ input[type='file']{
   font-size: 0.8rem;
 }
 .modify-middle-btn:hover{
-  background-color: #4E5166;
+  background-color: #FD2D01;
   color: white;
   transition: 0.2s linear;
 }
@@ -246,7 +246,7 @@ input[type='file']{
 .banniere-grey{
   margin:auto;
   width:100%;
-  background-color: #d1d2d6;
+  background-color: #2C3B97;
 }
 .about{
   position: relative;

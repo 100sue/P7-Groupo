@@ -13,7 +13,7 @@
                     <input type="text" v-model="emailLogin" name="emailLogin" id="emailLogin" class="login-container__input" placeholder="Adresse e-mail" aria-label="Adresse email">
                 </div>
                 <div>
-                    <span id="connectErrorMsg" v-show="errorPassword" class="login-container__errormsg">Paire mot de passe et adresse mail incorrecte.</span>
+                    <span id="connectErrorMsg" v-show="errorPassword" class="login-container__errormsg">Paire : mot de passe et adresse mail incorrecte.</span>
                     <input type="password" v-model="passwordLogin" name="passwordLogin" id="passwordLogin" class="login-container__input" placeholder="Mot de passe" aria-label="Mot de passe">
                 </div>
                 <button type="submit" class="login-container__btn">Se connecter</button>

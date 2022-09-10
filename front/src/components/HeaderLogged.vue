@@ -5,7 +5,7 @@
         </RouterLink>
         <form method="get" action="ville.php" class="header-form">
             <fontAwesome icon="search" class="header-form__icon"/>
-            <input type="text" name="search" placeholder="Rechercher sur l'intranet" class="header-form__input"/>
+            <input type="text" name="search" placeholder="Rechercher de collègues" class="header-form__input"/>
         </form>
     </div>
     <div class="header-nav">
