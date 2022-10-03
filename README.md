@@ -21,9 +21,6 @@ Ce projet utilisera NodeJs, Express et Mango DB pour le backend, et Vue, Vite po
  <br>
  <br>
  
-<p align="center">
-<img src= "https://user-images.githubusercontent.com/90606431/151553215-dbe79e1b-6538-49c0-bc56-583cb6b354d5.jpg" />
-</p>
 
 
  ## Installation des prérequis et lancement de l'application : ##
