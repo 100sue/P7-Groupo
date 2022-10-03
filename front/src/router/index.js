@@ -4,6 +4,7 @@ import SignUpView from "../views/SignUpView.vue";
 import FeedView from "../views/FeedView.vue";
 import ProfilView from "../views/ProfilView.vue";
 import ErrorView from "../views/ErrorView.vue"
+import MapView from "../views/MapView.vue"
 
 const router = createRouter({
   history: createWebHistory(),
@@ -27,6 +28,11 @@ const router = createRouter({
       path: "/feed",
       name: "feed",
       component: FeedView,
+    },
+    {
+      path: "/Map",
+      name: "Map",
+      component: MapView,
     },
     { 
       path: '/:pathMatch(.*)*', 

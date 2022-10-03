@@ -5,14 +5,14 @@
               Bienvenue,
           </p>
           <p class="signup-insert-msg p-red">
-            sur votre réseau social
+            sur Streetball Network
           </p>
           <img src="../assets/Banner-home.png" alt="Groupomania-image-accueil" class="signup-insert-img"/>
       </div>
       <div class="signup-container">
           <form class="signup-container-form" @submit="createUser">
               <p class="signup-container__title">
-                  Groupomania
+                  Scoreur App
               </p>
               <div>
                   <span id="connectErrorMsg" v-show="errorFirstName" class="signup-container__errormsg">Champ invalide, veuillez vérifier votre prénom.</span>
@@ -23,8 +23,8 @@
                   <input type="text" v-model="lastNameSignup" class="signup-container__input" placeholder="Nom" aria-label="Nom">
               </div>
               <div>
-                  <span id="connectErrorMsg" v-show="errorJob" class="signup-container__errormsg">Champ invalide, veuillez vérifier votre job dans l'entreprise.</span>
-                  <input type="text" v-model="jobSignup" class="signup-container__input" placeholder="Poste chez Groupomania" aria-label="Job">
+                  <span id="connectErrorMsg" v-show="errorJob" class="signup-container__errormsg">Champ invalide, veuillez vérifier votre poste au basket-ball.</span>
+                  <input type="text" v-model="jobSignup" class="signup-container__input" placeholder="Poste ou vous jouez" aria-label="Job">
               </div>
               <div>
                   <span id="connectErrorMsg" v-show="errorEmail" class="signup-container__errormsg">Champ invalide, veuillez vérifier votre email.</span>
@@ -104,7 +104,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 .signup-insert{
   width: 60%;
@@ -113,14 +113,14 @@ export default {
   margin:0;
   font-weight: bold;
   font-size: 3.5rem;
-  color: black;
+  color: #2C3B97;
 }
 .signup-insert-msg:last-of-type{
   margin-bottom: 60px;
 }
 
 .p-red{
-  color: #FD2D01
+  color: #FD2D01;
 }
 /* Image */ 
 .signup-insert-img{

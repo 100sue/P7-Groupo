@@ -2,12 +2,12 @@
     <div class="login">
         <div class="login-insert">
             <p class="login-insert-msg">Bienvenue,</p>
-            <p class="login-insert-msg p-red">sur votre réseau social</p>
+            <p class="login-insert-msg p-red">sur Streetball Network</p>
             <img src="../assets/banner-home.png" alt="Groupomania-image-accueil" class="login-insert-img"/>
         </div> 
         <div class="login-container">
             <form class="login-container-form" @submit="logUser">
-                <p class="login-container__title">Groupomania</p>
+                <p class="login-container__title">Scoreur App</p>
                 <div>
                     <span id="connectErrorMsg" v-show="errorEmail" class="login-container__errormsg">Champ invalide, veuillez vérifier votre email.</span>
                     <input type="text" v-model="emailLogin" name="emailLogin" id="emailLogin" class="login-container__input" placeholder="Adresse e-mail" aria-label="Adresse email">
@@ -71,7 +71,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 60px 0;
+    margin: 30px 0;
 }
 /* WELCOME TEXT */
 .login-insert{

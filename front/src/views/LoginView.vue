@@ -26,10 +26,10 @@
         max-width: 1024px;
         margin: auto;
         padding-top: 20px;
-        background-image: url("../assets/test2.jpg");
+        background-image: url("../assets/ball4.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        height: 68vh;
+        height: 55vh;
         padding: 3%; 
     }
     
