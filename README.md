@@ -55,11 +55,7 @@ Pour l'Utilisation de l'application :
 
 <br>
 
- 
-<p align="center">
-<img src= "https://user-images.githubusercontent.com/90606431/151551702-2b52d4ca-f247-4eb4-8f9c-60e1b13ef2ad.jpg"/>
- </p>
- 
+
 <br>
 
  ### Project  : Scoreur App ###
@@ -121,6 +117,3 @@ nodemon server
 
 
 
-<p align="center">
-<img src= "https://user-images.githubusercontent.com/90606431/151660985-c0a30670-7d3b-4b86-89fe-566e96a15e79.jpg" />
-</p>
