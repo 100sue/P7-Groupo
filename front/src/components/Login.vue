@@ -108,12 +108,16 @@ export default {
 }
 /* FORM */
 .login-container {
-    box-shadow: 1px 1px 10px #FD2D01;
     padding: 40px;
     border-radius: 20px;
     height: 230px;
     margin-bottom: 70px;
-    background-color: #2C3B97;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .login-container-form{
     display: flex;
@@ -129,10 +133,21 @@ export default {
 }
 .login-container__input{
     width: calc(100% - 20px);
-    font-weight: lighter;
-    border-radius: 5px;
-    border: 0.5px solid #FD2D01;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
 }
+.login-container__input::placeholder {
+    color: #fff;
+}
+
 .login-container__input[type="text"], .login-container__input[type="password"]{
     padding: 10px;
 }
