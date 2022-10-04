@@ -53,7 +53,8 @@ Pour l'Utilisation de l'application :
 - Accédez au fil d'actualité en vous identifiant.
 
 <br>
-
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/90606431/193896629-c2d8a3c7-ca1a-40d5-a493-b839c276bddb.png")/>
 
 <br>
 
