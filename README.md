@@ -11,8 +11,9 @@
  
 
 Ce projet utilisera NodeJs, Express et Mango DB pour le backend, et Vue, Vite pour le frontend. 
+ <br>
 Projet M.E.V.N (Mongo, Express, Vue, Node).
-<br>
+
 
  ## Technologies utilisées : ##
  
