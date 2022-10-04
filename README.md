@@ -21,9 +21,6 @@ Projet M.E.V.N (Mongo, Express, Vue, Node).
 - Dependances : Axios, Bcrypt, Cors,  Dotenv, Express, Fs, Jsonwebtoken, Mongoose, Mongoose-unique-validator,  Multer, Nodemon, Path, Vue-router .
 
  <br>
- <br>
- 
-
 
  ## Installation des prérequis et lancement de l'application : ##
 
