@@ -3,7 +3,7 @@
         <div class="login-insert">
             <p class="login-insert-msg">Bienvenue,</p>
             <p class="login-insert-msg p-red">sur Streetball Network</p>
-            <img src="../assets/banner-home.png" alt="Groupomania-image-accueil" class="login-insert-img"/>
+            <img src="../assets/accueil47.png" alt="Groupomania-image-accueil" class="login-insert-img"/>
         </div> 
         <div class="login-container">
             <form class="login-container-form" @submit="logUser">

@@ -7,7 +7,7 @@
           <p class="signup-insert-msg p-red">
             sur Streetball Network
           </p>
-          <img src="../assets/Banner-home.png" alt="Groupomania-image-accueil" class="signup-insert-img"/>
+          <img src="../assets/acceuil48.png" alt="Groupomania-image-accueil" class="signup-insert-img"/>
       </div>
       <div class="signup-container">
           <form class="signup-container-form" @submit="createUser">
