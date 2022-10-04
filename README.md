@@ -2,15 +2,16 @@
 
 ## Projet : Scoreur App.  ##
 
- Application Scoreur : Projet full-stack (frontend et backend).
- 
- Projet M.E.V.N (Mongo, Express, Vue, Node)
+ Application : Scoreur 
  
  <p align="center">
-<img src= "https://user-images.githubusercontent.com/90606431/186601599-2fae53bf-75b9-40f6-97f8-2b231a8b0202.jpg"/>
+ ![2](https://user-images.githubusercontent.com/90606431/193895531-f54d94b6-c866-4672-ab7c-3a97192f6563.png)
+
+
  
 
 Ce projet utilisera NodeJs, Express et Mango DB pour le backend, et Vue, Vite pour le frontend. 
+Projet M.E.V.N (Mongo, Express, Vue, Node).
 <br>
 
  ## Technologies utilisées : ##
@@ -116,4 +117,5 @@ Compiles and hot-reloads for development
 nodemon server
 
 
-
+ <p align="center">
+<img src= "https://user-images.githubusercontent.com/90606431/186601599-2fae53bf-75b9-40f6-97f8-2b231a8b0202.jpg"/>
