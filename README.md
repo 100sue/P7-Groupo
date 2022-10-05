@@ -2,16 +2,18 @@
 
 ## Projet : Scoreur App.  ##
 
- Application Scoreur : Projet full-stack (frontend et backend).
- 
- Projet M.E.V.N (Mongo, Express, Vue, Node)
+ Application : Scoreur 
  
  <p align="center">
-<img src= "https://user-images.githubusercontent.com/90606431/186601599-2fae53bf-75b9-40f6-97f8-2b231a8b0202.jpg"/>
+ <img src="https://user-images.githubusercontent.com/90606431/193895531-f54d94b6-c866-4672-ab7c-3a97192f6563.png")/>
+
+
  
 
 Ce projet utilisera NodeJs, Express et Mango DB pour le backend, et Vue, Vite pour le frontend. 
-<br>
+ <br>
+Projet M.E.V.N (Mongo, Express, Vue, Node).
+
 
  ## Technologies utilisées : ##
  
@@ -19,9 +21,6 @@ Ce projet utilisera NodeJs, Express et Mango DB pour le backend, et Vue, Vite po
 - Dependances : Axios, Bcrypt, Cors,  Dotenv, Express, Fs, Jsonwebtoken, Mongoose, Mongoose-unique-validator,  Multer, Nodemon, Path, Vue-router .
 
  <br>
- <br>
- 
-
 
  ## Installation des prérequis et lancement de l'application : ##
 
@@ -54,7 +53,8 @@ Pour l'Utilisation de l'application :
 - Accédez au fil d'actualité en vous identifiant.
 
 <br>
-
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/90606431/193896629-c2d8a3c7-ca1a-40d5-a493-b839c276bddb.png")/>
 
 <br>
 
@@ -116,4 +116,5 @@ Compiles and hot-reloads for development
 nodemon server
 
 
-
+ <p align="center">
+<img src= "https://user-images.githubusercontent.com/90606431/186601599-2fae53bf-75b9-40f6-97f8-2b231a8b0202.jpg"/>
