@@ -134,7 +134,7 @@ export default {
 .login-container .inputbox {
     position: relative;
 }
-.login-container .inputbox input{
+.login-container .inputbox input {
     width: calc(100% - 20px);
     background: transparent;
     border: none;
@@ -174,8 +174,9 @@ export default {
 }
 .login-container__errormsg{
     display: block;
-    font-size: 0.65rem;
-    margin:0;
+    font-size: 0.75rem;
+    margin-top: 10px;
+    color: white;
 }
 @media screen and (max-width: 1024px) {
     .login{

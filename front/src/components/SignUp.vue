@@ -212,8 +212,9 @@ export default {
 }
 .signup-container__errormsg{
   display: block;
-  font-size: 0.65rem;
-  margin:0;
+  font-size: 0.75rem;
+  margin-top: 10px;
+  color: white;
 }
 @media screen and (max-width: 1024px) {
   .signup{
