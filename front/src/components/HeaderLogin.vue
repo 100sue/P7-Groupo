@@ -37,7 +37,7 @@ export default {
     font-weight: bold;
     width: 110px;
     height: 39px;
-    border-radius: 30px;
+    border-radius: 10px;
     border: 2px solid #FD2D01;
 }
 .header-nav-btn-hov{
@@ -48,13 +48,14 @@ export default {
     font-weight: bold;
     width: 110px;
     height: 39px;
-    border-radius: 30px;
+    border-radius: 10px;
     border: 2px solid #FD2D01;
 }
 .header-nav-btn:hover{
-    color: #432ff7;
-    background-color: #FD2D01;
+    color: white;
+    background-color: black;
     transition: 0.2s linear;
+    border: 2px solid black;
 }
 .header-nav-btn__title{
     text-align: center;
