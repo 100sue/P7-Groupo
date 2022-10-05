@@ -14,25 +14,30 @@
               <p class="signup-container__title">
                   Scoreur App
               </p>
-              <div>
+              <div class="inputbox">
                   <span id="connectErrorMsg" v-show="errorFirstName" class="signup-container__errormsg">Champ invalide, veuillez vérifier votre prénom.</span>
-                  <input type="text" v-model="firstNameSignup" class="signup-container__input" placeholder="Prénom" aria-label="Prénom">
+                  <input type="text" v-model="firstNameSignup"  name=""  required="">
+                  <label >Prénom</label>
               </div>
-              <div>
+              <div class="inputbox">
                   <span id="connectErrorMsg" v-show="errorLastName" class="signup-container__errormsg">Champ invalide, veuillez vérifier votre nom.</span>
-                  <input type="text" v-model="lastNameSignup" class="signup-container__input" placeholder="Nom" aria-label="Nom">
+                  <input type="text" v-model="lastNameSignup"  name=""  required="">
+                  <label >Nom</label>
               </div>
-              <div>
+              <div class="inputbox">
                   <span id="connectErrorMsg" v-show="errorJob" class="signup-container__errormsg">Champ invalide, veuillez vérifier votre poste au basket-ball.</span>
-                  <input type="text" v-model="jobSignup" class="signup-container__input" placeholder="Poste ou vous jouez" aria-label="Job">
+                  <input type="text" v-model="jobSignup" name=""  required="">
+                  <label >Poste ou vous jouez</label>
               </div>
-              <div>
+              <div class="inputbox">
                   <span id="connectErrorMsg" v-show="errorEmail" class="signup-container__errormsg">Champ invalide, veuillez vérifier votre email.</span>
-                  <input type="text" v-model="emailSignup" class="signup-container__input" placeholder="Adresse e-mail" aria-label="Adresse email">
+                  <input type="text" v-model="emailSignup"  name="" required="">
+                  <label >Adresse e-mail</label>
               </div>
-              <div>
+              <div class="inputbox">
                   <span id="connectErrorMsg" v-show="errorPassword" class="signup-container__errormsg">Votre mot de passe doit contenir 8 caractères minimum.</span>
-                  <input type="password" v-model="passwordSignup" class="signup-container__input" placeholder="Mot de passe" aria-label="Mot de passe">
+                  <input type="password" v-model="passwordSignup"  name=""  required="">
+                  <label >Mot de passe</label>
               </div>
               <button type="submit" class="signup-container__btn">S'inscrire</button>
           </form>
@@ -144,46 +149,58 @@ export default {
   padding: 40px;
   border-radius: 10px;
   margin-bottom: 70px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0,.8);
   backdrop-filter: blur(5px);
-  box-shadow: 0 25px 45px rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 25px rgba(0, 0, 0,.5);
 }
 .signup-container-form{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 380px;
-  
 }
 .signup-container__title{
   color: #FD2D01;
-  font-weight:900;
+  font-weight: 900;
   font-size: 2.5rem;
   margin:0;
 }
-.signup-container__input{
+.signup-container .inputbox {
+  position: relative;
+
+}
+.signup-container .inputbox input{
   width: calc(100% - 20px);
-  background: rgba(255, 255, 255, 0.2);
+  background: transparent;
   border: none;
   outline: none;
-  padding: 10px 20px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px 0;
+  border-bottom: 1px solid #fff;
   font-size: 16px;
   letter-spacing: 1px;
   color: #fff;
 }
-.signup-container__input::placeholder{
+
+
+.signup-container .inputbox label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
   color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+.signup-container .inputbox input:focus ~ label, 
+.signup-container .inputbox input:valid ~ label
+{
+  top: -18px;
+  left: 0;
+  font-size: 12px;
+  color: #FD2D01;
 }
 
-.signup-container__input[type="text"], .signup-container__input[type="password"]{
-  padding: 10px;
-}
 .signup-container__btn{
   cursor: pointer;
   padding: 10px;

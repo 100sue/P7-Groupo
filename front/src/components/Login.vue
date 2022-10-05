@@ -8,13 +8,15 @@
         <div class="login-container">
             <form class="login-container-form" @submit="logUser">
                 <p class="login-container__title">Scoreur App</p>
-                <div>
+                <div class="inputbox">
                     <span id="connectErrorMsg" v-show="errorEmail" class="login-container__errormsg">Champ invalide, veuillez vérifier votre email.</span>
-                    <input type="text" v-model="emailLogin" name="emailLogin" id="emailLogin" class="login-container__input" placeholder="Adresse e-mail" aria-label="Adresse email">
+                    <input type="text" v-model="emailLogin" id="emailLogin"  name=""  required="">
+                    <label >Adresse e-mail</label>
                 </div>
-                <div>
+                <div class="inputbox">
                     <span id="connectErrorMsg" v-show="errorPassword" class="login-container__errormsg">Paire : mot de passe et adresse mail incorrecte.</span>
-                    <input type="password" v-model="passwordLogin" name="passwordLogin" id="passwordLogin" class="login-container__input" placeholder="Mot de passe" aria-label="Mot de passe">
+                    <input type="password" v-model="passwordLogin" name="" id="passwordLogin" required="" >
+                    <label >Mot de passe</label>
                 </div>
                 <button type="submit" class="login-container__btn">Se connecter</button>
             </form>
@@ -111,13 +113,11 @@ export default {
     padding: 40px;
     border-radius: 20px;
     height: 230px;
+    border-radius: 10px;
     margin-bottom: 70px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0,.8);
     backdrop-filter: blur(5px);
-    box-shadow: 0 25px 45px rgba(255, 255, 255, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 25px rgba(0, 0, 0,.5);
 }
 .login-container-form{
     display: flex;
@@ -131,25 +131,37 @@ export default {
     font-size: 2.5rem;
     margin:0;
 }
-.login-container__input{
+.login-container .inputbox {
+    position: relative;
+}
+.login-container .inputbox input{
     width: calc(100% - 20px);
-    background: rgba(255, 255, 255, 0.2);
+    background: transparent;
     border: none;
     outline: none;
-    padding: 10px 20px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
     font-size: 16px;
     letter-spacing: 1px;
     color: #fff;
 }
-.login-container__input::placeholder {
-    color: #fff;
+.login-container  .inputbox label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
 }
-
-.login-container__input[type="text"], .login-container__input[type="password"]{
-    padding: 10px;
+.login-container .inputbox input:focus ~ label,
+.login-container .inputbox input:valid ~ label
+ {
+  top: -18px;
+  left: 0;
+  font-size: 12px;
+  color: #FD2D01;
 }
 .login-container__btn{
     cursor: pointer;
