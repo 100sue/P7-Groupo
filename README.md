@@ -1,8 +1,9 @@
 
 
-## Projet : Scoreur App.  ##
+## Projet : Scoreur Compass  ##
 
- Application : Scoreur Compass developed by Scoreur App Technology.
+Scoreur Compass is developed by Scoreur App Technology.
+
   <br>
  <p align="center"> 
   ##  Projet en cours de développement  ##
