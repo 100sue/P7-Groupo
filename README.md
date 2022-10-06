@@ -4,7 +4,8 @@
 
  Application : Scoreur Compass developed by Scoreur App Technology.
   <br>
- <p align="center"> ##  Projet en cours de développement  ##
+ <p align="center"> 
+  ##  Projet en cours de développement  ##
 </p>
 
   <br>
