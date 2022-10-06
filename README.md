@@ -1,9 +1,16 @@
 
 
-## Projet : Scoreur App.  ##
+## Projet : Scoreur Compass  ##
 
- Application : Scoreur 
- 
+Scoreur Compass is developed by Scoreur App Technology.
+
+  <br>
+ <p align="center"> 
+  ##  Projet en cours de développement  ##
+</p>
+
+  <br>
+  
  <p align="center">
  <img src="https://user-images.githubusercontent.com/90606431/193895531-f54d94b6-c866-4672-ab7c-3a97192f6563.png")/>
 
@@ -19,6 +26,7 @@ Projet M.E.V.N (Mongo, Express, Vue, Node).
  
 - HTML5, CSS3, JavaScript, Node.js, Vue.js, Express, Mango Db, Vite, CRUD Operations, OWASP & RGPD Standards.
 - Dependances : Axios, Bcrypt, Cors,  Dotenv, Express, Fs, Jsonwebtoken, Mongoose, Mongoose-unique-validator,  Multer, Nodemon, Path, Vue-router .
+- Utilisation et incorporation de l'API de geolocalisation de google.
 
  <br>
 
