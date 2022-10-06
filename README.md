@@ -5,7 +5,7 @@
  Application : Scoreur Compass
   <br>
  <p align="center"> 
-## - Projet en cours de développement - ##
+##- Projet en cours de développement -##
 </p>
 
   <br>
