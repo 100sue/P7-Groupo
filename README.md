@@ -26,6 +26,7 @@ Projet M.E.V.N (Mongo, Express, Vue, Node).
  
 - HTML5, CSS3, JavaScript, Node.js, Vue.js, Express, Mango Db, Vite, CRUD Operations, OWASP & RGPD Standards.
 - Dependances : Axios, Bcrypt, Cors,  Dotenv, Express, Fs, Jsonwebtoken, Mongoose, Mongoose-unique-validator,  Multer, Nodemon, Path, Vue-router .
+- Utilisation et incorporation de l'API de geolocalisation de google.
 
  <br>
 
