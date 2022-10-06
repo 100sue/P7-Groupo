@@ -13,10 +13,15 @@
                     <input type="text" v-model="emailLogin" id="emailLogin"  name=""  required="">
                     <label >Adresse e-mail</label>
                 </div>
-                <div class="inputbox">
+                <div class="inputbox" @click.prevent="ToggleInput">
                     <span id="connectErrorMsg" v-show="errorPassword" class="login-container__errormsg">Paire : mot de passe et adresse mail incorrecte.</span>
-                    <input type="password" v-model="passwordLogin" name="" id="passwordLogin" required="" >
+                    <input v-on:click="ToggleInput" :type="type" ref="password-field" v-model="passwordLogin" name="" id="passwordLogin" required="" >
                     <label >Mot de passe</label>
+                    <button id="toggleBtn" >
+                        <i class="fa-regular fa-eye" v-if="icon"></i>
+                        <i class="fa fa-eye-slash" v-else="icon"></i>
+                    </button>
+                    
                 </div>
                 <button type="submit" class="login-container__btn">Se connecter</button>
             </form>
@@ -35,7 +40,9 @@ export default {
             emailLogin: "",
             passwordLogin: "",
             errorEmail: false,
-            errorPassword: false
+            errorPassword: false,
+            type: "password",
+            icon: true,
         }
     },
     methods: {
@@ -60,8 +67,21 @@ export default {
                     router.push("feed");
                     })
                 .catch(error => alert("Erreur : " + error));
+        },
+        ToggleInput() {
+            if(this.type == "password")
+            {
+                this.type = "text";
+                this.icon = false;
+            }
+            else {
+                this.type = "password";
+                this.icon = true;
+            }
         }
+
     }
+    
 }
 </script>
 
@@ -144,6 +164,7 @@ export default {
     font-size: 16px;
     letter-spacing: 1px;
     color: #fff;
+    position: relative;
 }
 .login-container  .inputbox label{
   position: absolute;
@@ -172,6 +193,23 @@ export default {
     border-radius: 5px;
     border: none;
 }
+
+.login-container .inputbox #toggleBtn {
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    background: rgba(0, 0, 0,.5);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FD2D01;
+}
+
+
 .login-container__errormsg{
     display: block;
     font-size: 0.75rem;

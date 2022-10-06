@@ -121,7 +121,7 @@ export default {
     align-items: center;    
 }
 .create-post-window{
-    background-color: #2C3B97;
+    background-color: #FD2D01;
     border-radius: 20px;
 }
 .create-post-top{
@@ -229,11 +229,12 @@ input[type='file']{
     justify-content: space-between;
     max-width: 570px;
     margin: auto;
-    border-radius: 30px;
-    background-color: #FD2D01;
-    border: 0.5px solid #2C3B97;
+    border-radius: 10px;
+    border: 0.5px solid #4E5166;
     padding:25px;
-    box-shadow: 2px 3px 8px #d0d1d6;
+    background: rgba(0, 0, 0,.8);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0,.5);
 }
 .main-create-post-photoprofil{
     border-radius: 100px;
@@ -256,7 +257,7 @@ input[type='file']{
     width: 85%;
 }
 .main-create-post-btn:hover{
-    background-color: #2C3B97;
+    background-color: #FD2D01;
     color: white;
     transition: 0.2s linear;
 }

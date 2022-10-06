@@ -351,10 +351,12 @@ input[type='file']{
   flex-direction: column;
   max-width: 570px;
   margin: 15px auto;
-  border-radius: 30px;
+  border-radius: 10px;
   border: 0.5px solid #4E5166;
   padding:25px;
-  box-shadow: 2px 3px 8px #d0d1d6;
+  background: rgba(0, 0, 0,.8);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0,.5);
 }
 .post-top{
   display: flex;
@@ -378,12 +380,13 @@ input[type='file']{
 .post-informations > p {
   margin:0;
   font-size: 0.8rem;
+  color: #fff;
 }
 .post-name{
   text-decoration: none;
   color:#FD2D01;
   margin:0;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 .post-date{
@@ -429,14 +432,17 @@ input[type='file']{
 }
 .post-middle-like__icon{
   font-size: 1.5rem;
-  color: #2C3B97;
+  color: #FD2D01;
 }
 .post-middle-like__iconRED{
   font-size: 1.5rem;
   color:#FD2D01;
 }
+.post-middle-like__iconRED:hover{
+  color:#fff;
+}
 .post-middle-like__icon:hover{
-  color:#FD2D01;
+  color:#fff;
 }
 /* BTN LIKE ET COMMENT */
 .post-bottom-comment{
@@ -540,8 +546,11 @@ input[type='file']{
   }
   
   /* PUBLICATION CONTENT */
-  .post-middle__text{
+
+ 
+  .post-middle__text {
       font-size: 0.9rem;
+      
   }
   /* BTN LIKE ET COMMENT */
   .post-bottom__input{

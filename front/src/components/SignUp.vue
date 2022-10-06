@@ -34,10 +34,14 @@
                   <input type="text" v-model="emailSignup"  name="" required="">
                   <label >Adresse e-mail</label>
               </div>
-              <div class="inputbox">
+              <div class="inputbox" @click.prevent="ToggleInput">
                   <span id="connectErrorMsg" v-show="errorPassword" class="signup-container__errormsg">Votre mot de passe doit contenir 8 caractères minimum.</span>
-                  <input type="password" v-model="passwordSignup"  name=""  required="">
+                  <input v-on:click="ToggleInput" :type="type" ref="password-field" v-model="passwordSignup"  name=""  required="">
                   <label >Mot de passe</label>
+                  <button id="toggleBtn" >
+                        <i class="fa-regular fa-eye" v-if="icon"></i>
+                        <i class="fa fa-eye-slash" v-else="icon"></i>
+                    </button>
               </div>
               <button type="submit" class="signup-container__btn">S'inscrire</button>
           </form>
@@ -61,7 +65,9 @@ export default {
           errorLastName: false,
           errorJob: false,
           errorEmail: false,
-          errorPassword: false
+          errorPassword: false,
+          type: "password",
+          icon: true,
       }
   },
   methods: {
@@ -95,7 +101,18 @@ export default {
                   router.push('feed');
               })
               .catch(error => alert("Erreur : " + error));
-      }
+      },
+      ToggleInput() {
+            if(this.type == "password")
+            {
+                this.type = "text";
+                this.icon = false;
+            }
+            else {
+                this.type = "password";
+                this.icon = true;
+            }
+        }
   }
   
 }
@@ -210,6 +227,21 @@ export default {
   border-radius: 5px;
   border: none;
 }
+.signup-container .inputbox #toggleBtn {
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    background: rgba(0, 0, 0,.5);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FD2D01;
+}
+
 .signup-container__errormsg{
   display: block;
   font-size: 0.75rem;
