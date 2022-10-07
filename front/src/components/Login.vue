@@ -135,9 +135,10 @@ export default {
     height: 230px;
     border-radius: 10px;
     margin-bottom: 70px;
-    background: rgba(0, 0, 0,.8);
+    background: rgba(0, 0, 0,.5);
     backdrop-filter: blur(5px);
     box-shadow: 0 15px 25px rgba(0, 0, 0,.5);
+    border: 0.5px solid #4E5166;
 }
 .login-container-form{
     display: flex;
@@ -200,7 +201,8 @@ export default {
     right: 10px;
     width: 35px;
     height: 35px;
-    background: rgba(0, 0, 0,.5);
+    background: rgba(0, 0, 0,-0.5);
+    border: none;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
