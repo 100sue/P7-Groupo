@@ -26,7 +26,7 @@
         max-width: 1024px;
         margin: auto;
         padding-top: 20px;
-        background-image: url("../assets/acceuil23.png");
+        background-image: url("../assets/224.png");
         background-repeat: no-repeat;
         background-size: cover;
         height: 55vh;

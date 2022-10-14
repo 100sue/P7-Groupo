@@ -2,12 +2,12 @@
   <div class="signup">
       <div class="signup-insert">
           <p class="signup-insert-msg">
-              Bienvenue,
+             
           </p>
           <p class="signup-insert-msg p-red">
-            sur Streetball Network
+            
           </p>
-          <img src="../assets/acceuil48.png" alt="Groupomania-image-accueil" class="signup-insert-img"/>
+          <img src="../assets/mockup-acceuil2.png" alt="Groupomania-image-accueil" class="signup-insert-img"/>
       </div>
       <div class="signup-container">
           <form class="signup-container-form" @submit="createUser">
@@ -146,6 +146,7 @@ export default {
 }
 /* Image */ 
 .signup-insert-img{
+  margin-top: 100px;
   animation: SlideDown 1.5s ease-in-out;
   animation-iteration-count: infinite;
 }

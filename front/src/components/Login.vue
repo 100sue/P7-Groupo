@@ -1,9 +1,9 @@
 <template>
     <div class="login">
         <div class="login-insert">
-            <p class="login-insert-msg">Bienvenue,</p>
-            <p class="login-insert-msg p-red">sur Streetball Network</p>
-            <img src="../assets/accueil47.png" alt="Groupomania-image-accueil" class="login-insert-img"/>
+            <p class="login-insert-msg"></p>
+            <p class="login-insert-msg p-red"></p>
+            <img src="../assets/mockup-acceuil.png" alt="Groupomania-image-accueil" class="login-insert-img"/>
         </div> 
         <div class="login-container">
             <form class="login-container-form" @submit="logUser">
@@ -113,6 +113,7 @@ export default {
 }
 /* IMAGE */ 
 .login-insert-img{
+    margin-top: 110px;
     animation: SlideDown 1.5s ease-in-out;
     animation-iteration-count: infinite;
 }
