@@ -3,14 +3,13 @@
         <RouterLink to="/feed">
             <img src="../assets/Groupomania-logo.svg" alt="Groupomania-logo" class="header__logo"/>
         </RouterLink>
-        <form method="get" action="ville.php" class="header-form">
-            <fontAwesome icon="search" class="header-form__icon"/>
-            <input type="text" name="search" placeholder="Rechercher de collègues" class="header-form__input"/>
-        </form>
     </div>
     <div class="header-nav">
         <RouterLink to="/feed" class="header-nav-home">
             <fontAwesome icon="house" class="header-nav__icon"/>
+        </RouterLink >
+        <RouterLink to="/map" class="header-nav-home">
+            <fontAwesome icon="compass" class="header-nav__icon"/>
         </RouterLink >
         <button href="#" @click="burgerMenu" aria-label="bouton profil" :class="burgerMenuClass()">
             <fontAwesome icon="sort-down" class="header-nav-btn__icon"/>
@@ -30,7 +29,7 @@
 </template>
 
 <script>
-import { RouterLink } from "vue-router";
+
 export default {
     name: 'HeaderLogged',
     data() {
@@ -117,7 +116,8 @@ export default {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 180px;
+    width: 190px;
+    gap: 15px;
 }
 .header-nav__icon{
     height: 35px;

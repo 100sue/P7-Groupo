@@ -11,13 +11,14 @@ library.add(fas);
 
 const app = createApp(App);
 
-app.use(router);
+
 app.component("fontAwesome", FontAwesomeIcon);
 app.use(Vue3Geolocation);
 app.use(VueGoogleMaps, {
     load: {
-        key: ''
+        key: 'AIzaSyDNtUatJ0IIECx-RXfGkOGEYGKUyeLWNXQ',
     },
-    autobindAllEvents: true,
+    installComponents: true, 
 });
+app.use(router);
 app.mount("#app");
