@@ -4,6 +4,7 @@
 // Import mongoose afin de faciliter les interactions avec la base de données de mongoDB.
 // Import de path afin de pouvoir travailler avec les chemins des fichiers(module node qui sert à cacher notre addresse Mongo, marche avec dotenv).
 // Import de dotenv afin de protéger les informations de connexion vers la base de données.
+// Import de swagger pour réaliser la documentation de l'api.
 // Appel au module Express avec sa fonction.
 
 const express = require('express');
@@ -13,9 +14,14 @@ const app = express();
 const cors = require('cors');
 const dotenv = require('dotenv'); 
 dotenv.config(); 
+const swaggerDocumentation = require("./helper/documentations")
+const swaggerDoc = require('swagger-ui-express');
 
 app.use(cors()); 
 app.use(express.json());
+
+app.use("/documentations", swaggerDoc.serve);
+app.use("/documentations", swaggerDoc.setup(swaggerDocumentation));
 
 // Routes vers l'utilisateur et les posts :
 
