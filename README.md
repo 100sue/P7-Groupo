@@ -3,6 +3,7 @@
 ## Projet : Scoreur Compass  ##
 
 Scoreur Compass is developed by Scoreur App Technology.
+App Full Stack.
 
   <br>
  <p align="center"> 
