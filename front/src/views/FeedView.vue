@@ -2,20 +2,20 @@
     import HeaderLogged from '../components/HeaderLogged.vue';
     import Feed from '../components/Feed.vue';
     import Publication from '../components/Publication.vue';
-    </script>
+</script>
     
-    <template>
-        <header id="header">
-            <HeaderLogged/> 
-        </header>
-        <span class="header-line"></span>
-        <main id="main">
-            <Feed/>
-            <Publication/>
-        </main>
-    </template>
+<template>
+    <header id="header">
+        <HeaderLogged/> 
+    </header>
+    <span class="header-line"></span>
+     <main id="main">
+        <Feed/>
+        <Publication/>
+    </main>
+</template>
     
-    <style scoped>
+<style scoped>
     #header{
         position: sticky;
         max-width: 1024px;
@@ -53,4 +53,4 @@
             margin-top:30px;
         }
     }
-    </style>
+</style>
